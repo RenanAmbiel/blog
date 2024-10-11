@@ -163,6 +163,7 @@ input, select, textarea {
 
 	p, ul, ol, dl {
 		margin-bottom: 1em;
+		text-align: justify;
 	}
 
 /* Row */
@@ -2585,6 +2586,7 @@ input, select, textarea {
 					position: relative;
 					top: -0.65em;
 					margin-bottom: -0.65em;
+					text-align: justify;
 				}
 
 			.box.post .info {
@@ -2697,6 +2699,7 @@ input, select, textarea {
 					position: relative;
 					top: -0.75em;
 					margin-bottom: -0.75em;
+					text-align: justify;
 				}
 
 			.box.post .info {
@@ -2839,6 +2842,7 @@ input, select, textarea {
 					font-size: 1em;
 					font-family: 'Source Sans Pro', sans-serif;
 					line-height: 1.5em;
+					text-align: justify;
 				}
 
 				.box.post .info {
