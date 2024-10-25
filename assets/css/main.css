@@ -165,7 +165,7 @@ input, select, textarea {
 		margin-bottom: 1em;
 		text-align: justify;
 	}
-
+ 
 /* Row */
 
 	.row {
@@ -1737,41 +1737,30 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
-		display: inline-block;
-	}
-
-		.image img {
-			display: block;
-			width: 100%;
-		}
-
-		.image.fit {
-			display: block;
-			width: 100%;
-		}
-
-		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		}
-
-		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-		.image.centered {
-			display: block;
-			margin: 0 0 2em 0;
-		}
-
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
-
+/* painel 123123  */
+		.image-gallery {
+            display: flex;
+            justify-content: left; /* Centraliza as imagens */
+            flex-wrap: wrap; /* Permite que as imagens se movam para a próxima linha se necessário */
+            gap: 1px; /* Espaçamento entre as imagens */
+            padding: 2px;
+        }
+        .image-gallery img {
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 5px; /* Arredonda os cantos das imagens */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+            transition: transform 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.2); /* Aumenta ligeiramente a imagem ao passar o mouse */
+        }
+        figcaption {
+            font-size: 14px;
+            color: #555;
+        }
+        figure {
+            width: 600px; /* Garante que o tamanho das imagens e das legendas se alinhem */
+        }
 /* Button */
 
 	input[type="button"],
@@ -2334,10 +2323,11 @@ input, select, textarea {
 /* Content */
 
 	#content {
+		width: auto; 
+		display: inline-block; /* Ajusta o tamanho do container ao conteúdo */
 		position: relative;
 		background-color: #eae2b7;
 		background-image: url("images/bg02.png");
-		width: 100%;
 		-moz-flex-grow: 1;
 		-webkit-flex-grow: 1;
 		-ms-flex-grow: 1;
@@ -2349,6 +2339,9 @@ input, select, textarea {
 	}
 
 		#content > .inner {
+
+			width: auto; 
+			display: inline-block;
 			position: relative;
 			z-index: 1;
 		}
@@ -2520,9 +2513,13 @@ input, select, textarea {
 
 			#content {
 				box-shadow: 0 0 0.25em 0em rgba(1, 0, 0, 0.25);
+				222px
 			}
 
 				#content > .inner {
+
+					width: auto; 
+					display: inline-block;
 
 					/*
 								This sets an upper limit on your page content to prevent it
@@ -2531,7 +2528,8 @@ input, select, textarea {
 								whatever you like (or remove it entirely).
 							*/
 
-					max-width: 10000px;
+					max-width: 1000px;
+
 				}
 
 		/* Copyright */
@@ -2550,7 +2548,6 @@ input, select, textarea {
 					height: 0.5em;
 					margin: 0 0 2em 0;
 				}
-
 	}
 
 /* Wide */
@@ -2660,6 +2657,9 @@ input, select, textarea {
 		/* Content */
 
 			#content {
+
+				width: auto; 
+				display: inline-block;
 				padding: 3em 5em 8em 5em;
 				margin-left: 7em;
 			}
@@ -2742,6 +2742,9 @@ input, select, textarea {
 
 			#content {
 				padding: 2em 3em 6em 3em;
+
+				width: auto; 
+				display: inline-block;
 			}
 
 	}
@@ -2915,6 +2918,9 @@ input, select, textarea {
 			#content {
 				margin-top: 44px;
 				padding: 3em 20px 2em 20px;
+
+				width: auto; 
+				display: inline-block;
 			}
 
 		/* Sidebar */
@@ -2968,6 +2974,9 @@ input, select, textarea {
 				margin-left: 0;
 				margin-right: 0;
 				min-height: 0 !important;
+
+				width: auto; 
+				display: inline-block;
 			}
 
 		/* Sidebar */
@@ -3003,6 +3012,9 @@ input, select, textarea {
 				-webkit-transform: translateX(14em);
 				-ms-transform: translateX(14em);
 				transform: translateX(14em);
+
+				width: auto; 
+				display: inline-block;
 			}
 
 			body.sidebar-visible #sidebar {
