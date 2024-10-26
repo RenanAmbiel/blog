@@ -11,14 +11,25 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 	</head>
 	<body class="is-preload">
-
 		<!-- Content -->
 			<div id="content">
+				<div id="sidebar2"><h1> <a href= "#">POSTS RECENTES</a></h1><a href="#" class="image featured"><img src="images/pic01.jpg" alt="images" />
+					<a href="#" class="image featured"><img src="images/pic01.jpg" alt="images" />
+					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="tles and subtitles will wrap automatically when necessary, so don't worry
+									if they get too long. You can a" />
+					<a href="#" class="image featured"><img src="images/pic03.jpg" alt=" fad fadsf dsfadsfdasfdasfdfd adf a dfdf " />
+					<a href="#" class="image featured"><img src="images/pic04.jpg" alt="f a dfdaf adf ff df af" />
+					<a href="#" class="image featured"><img src="images/pic05 jpg" alt="" />
+					<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" />
+					<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" />
+					<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" />
+				</div>
 				<div class="inner">
 
-					<!-- Post -->
+ 					<!-- Post -->
 						<article class="box post post-excerpt">
 							<header>
 								<!--
@@ -168,12 +179,19 @@
 
 			</div>
 
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			
+			<script>
+		        fetch('comentarios.txt')
+		            .then(response => response.text())
+		            .then(data => document.getElementById("fileContent").innerText = data);
+		    </script>
+
+		
 	</body>
 </html>
