@@ -2,7 +2,7 @@
 	"siteId": "dbbe91b9-b51e-47ad-8405-1f035d123284",
 	"geolocation": {
 		"data": {
-			"city": "São Paulo",
+			"city": "São José do Rio Preto",
 			"country": {
 				"code": "BR",
 				"name": "Brazil"
@@ -12,10 +12,10 @@
 				"name": "São Paulo"
 			},
 			"timezone": "America/Sao_Paulo",
-			"latitude": -23.6283,
-			"longitude": -46.6409,
-			"postalCode": "01000"
+			"latitude": -20.7701,
+			"longitude": -49.3577,
+			"postalCode": "15000"
 		},
-		"timestamp": 1729746467934
+		"timestamp": 1729894288530
 	}
 }
