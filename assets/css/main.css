@@ -45,9 +45,20 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, footer2, footer3,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+figcaption  {
+	margin-left: 20px;
+	color: black;    
+	font-size: 0.9em;   
+
+	}
+figcaption:hover {
+    color: darkblue; /* Altera a cor ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+}
 
 body {
 	line-height: 1;
@@ -430,6 +441,15 @@ input, select, textarea {
 				}
 
 		@media screen and (min-width: 880px) {
+			#footer { 
+				background-color:#3B2B20;
+				width: 100%;
+				height: 50px;
+				color: white;
+				margin: 0;
+				bottom: 0; 
+   				right: 0; 	
+				 }
 
 			.row {
 				display: flex;
@@ -1414,6 +1434,9 @@ input, select, textarea {
 		    #sidebar2 {
 		        display: none;
 		    }
+		    #footer {
+		        display: none;
+		    }
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1762,11 +1785,16 @@ input, select, textarea {
 
 	.image {
 		display: inline-block;
+
 	}
 
 		.image img {
 			display: block;
-			width: 100%;
+			max-width: 100%;
+			box-shadow: 12px 12px 10px 5px rgba(0, 0, 0, 0.3); /* Sombra em torno da imagem */
+			border: 1px inset  #333; /* Ajuste a espessura, estilo e cor da moldura */
+    		border-top-left-radius: 8px; /* Ajuste o valor conforme desejado */
+    		border-bottom-right-radius: 8px;
 		}
 
 		.image.fit {
@@ -1793,6 +1821,7 @@ input, select, textarea {
 			.image.centered img {
 				margin: 0 auto;
 				width: auto;
+				max-width: 100%;
 			}
 
 /* Button */
@@ -2413,8 +2442,8 @@ input, select, textarea {
 			    right: 0;
 			    top: 0;
 			    width: 24%;
-			    height: calc(100% - 20px);
-			    background-color: #f0f2f5; /* Cor de fundo do menu */
+			    height: calc(100% - 150px);
+			    background-color: #E2DFD2; /* Cor de fundo do menu */
 			    border-left: 1px solid #ccc; /* Linha à esquerda do menu */
 			    padding: 20px;
 			    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); 
@@ -2429,9 +2458,70 @@ input, select, textarea {
 			    margin: 0 auto;
 			    margin: 20px auto 0;
 			    max-height: none;
+			    box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.5)
 			}
 			#sidebar2 h1 {
 				padding-left: 20px;
+			}
+			#footer {
+				display: block;
+				background-image: url("images/Sem título.png");
+				background-size: cover; /* Cobre todo o elemento */
+			    background-position: center; /* Centraliza a imagem */
+			    background-repeat: no-repeat; /* Evita que a imagem se repita */
+			    width: 100%; /* Define a largura do elemento */
+			    height: 150px; /* Define a altura do elemento */
+				padding: 0.875em 0.25em;
+				border-radius: 0.2em;
+				text-align: right; 
+				box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);
+				text-decoration: none;
+				color: #fff;
+			    position: fixed;
+			    right: 0;
+			    bottom: 0;
+			    width: 24%;
+			    height: 150px;
+			    background-color: #008080; /* Cor de fundo do menu */
+			    font-size: 1.5em;
+			    text-align: right
+
+			    
+			.icons a {
+			    font-size: 24px; /* Tamanho padrão dos ícones */
+			    text-decoration: none; /* Remove o sublinhado */
+			}
+
+			/* Cor específica para cada ícone */
+			.icons a.fa-reddit {
+			    color: #FF4500; /* Vermelho para Reddit */
+			}
+
+			.icons a.fa-youtube {
+			    color: #FF0000; /* Vermelho para YouTube */
+			}
+
+			.icons a.fa-linkedin {
+			    color: #0077B5; /* Azul para LinkedIn */
+			}
+
+			.icons a.fa-tumblr {
+			    color: #35465C; /* Azul escuro para Tumblr */
+			}
+
+			.icons a.fa-github {
+			    color: #211F1F; /* Preto para GitHub */
+			}
+
+			.icons a.fa-pagelines {
+			    color: #009639; /* Verde para Pagelines */
+			}    
+			}
+			#footer p {
+				
+				background: linear-gradient(blue, green);
+				text-align: right;
+
 			}
 			.image:hover {
 			    transform: scale(1.07); /* Aumenta a imagem levemente no hover */
