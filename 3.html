@@ -6,18 +6,32 @@
 -->
 <html>
 	<head>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<title>Sintropica Consultoria Blog</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 	</head>
 	<body class="is-preload">
-
 		<!-- Content -->
 			<div id="content">
+				<div id="sidebar2"><h4> <a href= "#">POSTS RECENTES</a></h4>
+
+					<a href="#" class="image featured"><img src="images/pic01.jpg" alt="images" /><figcaption>Agricultura sintropica</figcaption></a>
+					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="images" /><figcaption>Pesquisa científica</figcaption></a>
+					<a href="#" class="image featured"><img src="images/pic03.jpg" alt="images" /><figcaption>Agricultura de Precisão: Soluções Tecnológicas para Desafios Climáticos</figcaption></a>
+					<a href="#" class="image featured"><img src="images/pic04.jpg" alt="images" /><figcaption>O Poder do Python na Análise de Dados: Um Estudo de Caso com os Registros de Votação de 2022</figcaption></a>
+					<a href="#" class="image featured"><img src="images/pic05.jpg" alt="images" /><figcaption>Artigo: Uso de Inteligência Artificial no Geoprocessamento para Análise de Tipos de Telhados em Jacareí</figcaption></a>
+					<a href="#" class="image featured"><img src="images/pic06.jpg" alt="images" /><figcaption>WEBSIG que integram mapas interativos diretamente em páginas web</figcaption></a>
+					<a href="#" class="image featured"><img src="images/pic07.jpg" alt="images" /><figcaption> Mapas temáticos sobre uso do solo</figcaption></a>
+					<a href="#" class="image featured"><img src="images/pic08.jpg" alt="images" /><figcaption>Queimadas mata atlantica</figcaption></a>
+
+				</div>
 				<div class="inner">
 
-					<!-- Post -->
+ 					<!-- Post -->
 						<article class="box post post-excerpt">
 							<header>
 								<h2><a href="#">Agricultura de Precisão: Soluções Tecnológicas para Desafios Climáticos</a></h2>
@@ -48,6 +62,13 @@
 								<p> <a href="#python">Conclusão: Rumo a um Futuro Sustentável </a></p> 
 								<p> A agricultura de precisão não é apenas uma tendência, mas uma necessidade diante dos desafios que a agricultura enfrenta atualmente. Através do uso de tecnologias inovadoras, como drones, e práticas de cultivo sustentáveis, conseguimos enfrentar as anomalias climáticas e garantir uma produção agrícola mais resiliente e responsável. </p> 
 								<p> Nosso compromisso com a agricultura de precisão é um passo em direção a um futuro mais sustentável, onde a tecnologia se une à natureza para promover uma produção alimentar eficiente e ecologicamente correta. À medida que continuamos a explorar e implementar essas soluções, estamos confiantes de que podemos contribuir para a segurança alimentar e a preservação do nosso planeta.</p> 
+								<h3>Deixe um comentário:</h3>
+								    <form action="salvarcomentario.php" method="POST">
+								        <label for="nome">Nome:</label><br>
+								        <input type="text" id="nome" name="nome" required><br><br>
+								        <label for="comentario">Comentário:</label><br>
+								        <textarea id="comentario" name="comentario" rows="7" required></textarea><br><br>
+									<input type="submit" value="Enviar">
 						</article>
 
 					<!-- Post -->
@@ -59,37 +80,48 @@
 							<div class="pages">
 								<a href="1.html#">1</a>
 								<a href="2.html#">2</a>
-								<a href="3.html#" class="active">3</a>
+								<a href="3.html#"class="active">3</a>
 								<a href="4.html#">4</a>
-								<span>&hellip;</span>
-								<a href="#">20</a>
 							</div>
 							<a href="4.html#" class="button next">Next Page</a>
 						</div>
 
 				</div>
+				<div id="footer">
+				   		<p> renanambrosia@gmail.com </p>
+				   		<p>siga-nos: 
+				   			<a target="_blank" href="https://www.reddit.com/user/CommercialSweet6014/" class="icon brands fa-reddit"style="background-color: white; color: #FF4500"></a>
+				   			<a target="_blank" href="https://www.youtube.com/channel/UCWEr83yP5Ja6_49Kcr3QwDw" class="icon brands fa-youtube"style=" background-color: white; color: red"></a>
+				   			<a target="_blank" href="https://www.linkedin.com/in/renan-ambiel-74439a1b7/" class="icon brands fa-linkedin"style="background-color: white; color:#0080FF;">
+				   			<a target="_blank" href="https://www.tumblr.com/blog/ambrosiaconsultoria-blog" class="icon brands fa-tumblr" style="background-color: black ; color: white;"></a>
+				   			<a target="_blank" href="https://github.com/RenanAmbiel" class="icon brands fa-github fa-fade" style="background-color: white; color: black;"></a>
+				   			
+				   		</a></p>
+				</div>
 			</div>
+
 
 		<!-- Sidebar -->
 			<div id="sidebar">
 
 				<!-- Logo -->
-					<h1 id="logo"><a href="#">Sintrópica</a></h1>
+					<h1 id="logo"><a href="index.html">Sintrópica</a></h1>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="#">Latest Post</a></li>
-							<li><a href="#">Archives</a></li>
-							<li><a href="#">About Me</a></li>
-							<li><a href="#">Contact Me</a></li>
+							<li class="current"><a href="#">Posts</a></li>
+							<li><a href="#">aquivo</a></li>
+							<li><a href="">livros </a></li>
+							<li><a href=""target="_blank" >scripts</a></li>
+							<li><a href="https://sintropicaconsultoria.netlify.app/#contact">contato </a></li>
 						</ul>
 					</nav>
 
 				<!-- Search -->
 					<section class="box search">
 						<form method="post" action="#">
-							<input type="text" class="text" name="search" placeholder="Search" />
+							<input type="text" class="text" name="search" placeholder="Em manutençao" />
 						</form>
 					</section>
 
@@ -97,106 +129,20 @@
 					<section class="box text-style1">
 						<div class="inner">
 							<p>
-								<strong>Striped:</strong> A free and fully responsive HTML5 site
-								template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>
+								<strong> Sintropica Consultoria:</strong> soluções ambientais e agricolas. A nossa missão é trabalhar para um futuro mais verde <a href="https://sintropicaconsultoria.netlify.app/#"> visite nosso site </a>
 							</p>
 						</div>
 					</section>
 
-				<!-- Recent Posts -->
-					<section class="box recent-posts">
-						<header>
-							<h2>Recent Posts</h2>
-						</header>
-						<ul>
-							<li><a href="#">Agricultura sintropica</a></li>
-							<li><a href="#">Pesquisa científica</a></li>
-							<li><a href="#">Sed dolore magna</a></li>
-							<li><a href="#">Malesuada commodo</a></li>
-							<li><a href="#">Ipsum metus nullam</a></li>
-						</ul>
-					</section>
-
-				<!-- Recent Comments -->
-					<section class="box recent-comments">
-						<header>
-							<h2>Recent Comments</h2>
-						</header>
-						<ul>
-							<li>case on <a href="#">Lorem ipsum dolor</a></li>
-							<li>molly on <a href="#">Sed dolore magna</a></li>
-							<li>case on <a href="#">Sed dolore magna</a></li>
-						</ul>
-					</section>
-
-				<!-- Calendar -->
-					<section class="box calendar">
-						<div class="inner">
-							<table>
-								<caption>julho 2014</caption>
-								<thead>
-									<tr>
-										<th scope="col" title="Monday">s</th>
-										<th scope="col" title="Tuesday">T</th>
-										<th scope="col" title="Wednesday">q</th>
-										<th scope="col" title="Thursday">q</th>
-										<th scope="col" title="Friday">s</th>
-										<th scope="col" title="Saturday">S</th>
-										<th scope="col" title="Sunday">d</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td colspan="4" class="pad"><span>&nbsp;</span></td>
-										<td><span>1</span></td>
-										<td><span>2</span></td>
-										<td><span>3</span></td>
-									</tr>
-									<tr>
-										<td><span>4</span></td>
-										<td><span>5</span></td>
-										<td><a href="#">6</a></td>
-										<td><span>7</span></td>
-										<td><span>8</span></td>
-										<td><span>9</span></td>
-										<td><a href="#">10</a></td>
-									</tr>
-									<tr>
-										<td><span>11</span></td>
-										<td><span>12</span></td>
-										<td><span>13</span></td>
-										<td class="today"><a href="#">14</a></td>
-										<td><span>15</span></td>
-										<td><span>16</span></td>
-										<td><span>17</span></td>
-									</tr>
-									<tr>
-										<td><span>18</span></td>
-										<td><span>19</span></td>
-										<td><span>20</span></td>
-										<td><span>21</span></td>
-										<td><span>22</span></td>
-										<td><a href="#">23</a></td>
-										<td><span>24</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">25</a></td>
-										<td><span>26</span></td>
-										<td><span>27</span></td>
-										<td><span>28</span></td>
-										<td class="pad" colspan="3"><span>&nbsp;</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</section>
 
 				<!-- Copyright -->
 					<ul id="copyright">
-						<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Striped.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
-
 			</div>
+
+
+		
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -204,6 +150,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			
+			<script>
+		        fetch('comentarios.txt')
+		            .then(response => response.text())
+		            .then(data => document.getElementById("fileContent").innerText = data);
+		    </script>
+
 	</body>
 </html>

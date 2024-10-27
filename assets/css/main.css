@@ -19,9 +19,7 @@
 	    z-index: 10; /* Garante que o popup fique acima das imagens */
 }
 
-.image-container:hover .popup {
-    display: block; /* Mostra o popup ao passar o mouse sobre o contêiner da imagem */
-}
+
 .image-container {
     position: relative; /* Necessário para o posicionamento do popup */
 }
@@ -51,8 +49,8 @@ footer, header, hgroup, menu, nav, section {
 
 figcaption  {
 	margin-left: 20px;
-	color: black;    
-	font-size: 0.9em;   
+	color: white;    
+	font-size: 0.8em;   
 
 	}
 figcaption:hover {
@@ -2443,7 +2441,7 @@ input, select, textarea {
 			    top: 0;
 			    width: 24%;
 			    height: calc(100% - 150px);
-			    background-color: #E2DFD2; /* Cor de fundo do menu */
+			    background-color: #364050; /* Cor de fundo do menu */
 			    border-left: 1px solid #ccc; /* Linha à esquerda do menu */
 			    padding: 20px;
 			    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); 
@@ -2460,9 +2458,11 @@ input, select, textarea {
 			    max-height: none;
 			    box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.5)
 			}
-			#sidebar2 h1 {
+			#sidebar2 h4 {
 				padding-left: 20px;
+				color:white;
 			}
+
 			#footer {
 				display: block;
 				background-image: url("images/Sem título.png");
@@ -2483,45 +2483,17 @@ input, select, textarea {
 			    width: 24%;
 			    height: 150px;
 			    background-color: #008080; /* Cor de fundo do menu */
-			    font-size: 1.5em;
+			    font-size: 0.8em;
 			    text-align: right
 
+
 			    
-			.icons a {
-			    font-size: 24px; /* Tamanho padrão dos ícones */
-			    text-decoration: none; /* Remove o sublinhado */
-			}
-
-			/* Cor específica para cada ícone */
-			.icons a.fa-reddit {
-			    color: #FF4500; /* Vermelho para Reddit */
-			}
-
-			.icons a.fa-youtube {
-			    color: #FF0000; /* Vermelho para YouTube */
-			}
-
-			.icons a.fa-linkedin {
-			    color: #0077B5; /* Azul para LinkedIn */
-			}
-
-			.icons a.fa-tumblr {
-			    color: #35465C; /* Azul escuro para Tumblr */
-			}
-
-			.icons a.fa-github {
-			    color: #211F1F; /* Preto para GitHub */
-			}
-
-			.icons a.fa-pagelines {
-			    color: #009639; /* Verde para Pagelines */
-			}    
 			}
 			#footer p {
 				
-				background: linear-gradient(blue, green);
+				background: linear-gradient(brown, green);
 				text-align: right;
-
+				height: 20px;
 			}
 			.image:hover {
 			    transform: scale(1.07); /* Aumenta a imagem levemente no hover */
