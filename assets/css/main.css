@@ -48,13 +48,13 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 figcaption  {
-	margin-left: 20px;
+	margin-left: 13px;
 	color: white;    
 	font-size: 0.8em;   
 
 	}
 figcaption:hover {
-    color: darkblue; /* Altera a cor ao passar o mouse */
+    color: #0080FF; /* Altera a cor ao passar o mouse */
     cursor: pointer; /* Muda o cursor para indicar interatividade */
 }
 
@@ -2459,12 +2459,13 @@ input, select, textarea {
 			    box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.5)
 			}
 			#sidebar2 h4 {
-				padding-left: 20px;
+				padding-left: 25px;
 				color:white;
 			}
 
 			#footer {
-				display: block;
+				position: relative;
+
 				background-image: url("images/Sem título.png");
 				background-size: cover; /* Cobre todo o elemento */
 			    background-position: center; /* Centraliza a imagem */
@@ -2473,27 +2474,27 @@ input, select, textarea {
 			    height: 150px; /* Define a altura do elemento */
 				padding: 0.875em 0.25em;
 				border-radius: 0.2em;
-				text-align: right; 
 				box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);
-				text-decoration: none;
 				color: #fff;
 			    position: fixed;
 			    right: 0;
-			    bottom: 0;
 			    width: 24%;
 			    height: 150px;
 			    background-color: #008080; /* Cor de fundo do menu */
-			    font-size: 0.8em;
-			    text-align: right
-
+			    font-size: 0.95em;
 
 			    
 			}
 			#footer p {
-				
+				margin-bottom: 11px;
 				background: linear-gradient(brown, green);
-				text-align: right;
 				height: 20px;
+				gap: 6px;
+				display: flex;
+
+				border-radius: 0.2em;
+				opacity: 0.7;
+
 			}
 			.image:hover {
 			    transform: scale(1.07); /* Aumenta a imagem levemente no hover */
@@ -2674,12 +2675,12 @@ input, select, textarea {
 
 /* Wide */
 
-	@media screen and (min-width: 1201px) {
+	@media screen and (min-width: 1401px) {
 			
 		/* Basic */
 
 			body {
-				min-width: 1200px;
+				min-width: 1400px;
 				font-size: 12pt;
 			}
 
@@ -2788,7 +2789,7 @@ input, select, textarea {
 
 /* Narrow */
 
-	@media screen and (min-width: 880px) and (max-width: 1200px) {
+	@media screen and (min-width: 880px) and (max-width: 1400px) {
 
 		/* Basic */
 
